@@ -5,10 +5,6 @@
 		<title>EduSign</title>
 		<link href="../css/carousel.css" rel="stylesheet">
 	</head>
-		
-		
-		
-	</head>
 	
 	<body>
 	<div class="navbar-wrapper">
@@ -29,9 +25,9 @@
             <li><a href="http://www.bootply.com" target="ext">My Account</a></li>
             <li><a href="#contact">Parent's Account</a></li>
             <li><a href="#contact">Sign Out</a></li>
-              
-            </li>
-          </ul>
+        </ul>
+     
+          
         </div>
 
     </div>
@@ -50,7 +46,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/assets/example/bg_suburb.jpg" style="width:100%" class="img-responsive">
+      <img src="" style="width:100%" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
           <h1>Weclome Back, Let's pick a Game!</h1>
@@ -80,11 +76,11 @@
     
   </div>
   <!-- Controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="icon-prev"></span>
+  <a class="left carousel-control" href="#myCarousel" role = "button" data-slide="prev">
+    <span class="icon-prev" aria-hidden="true"></span>
   </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="icon-next"></span>
+  <a class="right carousel-control" href="#myCarousel" role = "button" data-slide="next">
+    <span class="icon-next"aria-hidden="true"></span>
   </a>  
 </div>
 <!-- /.carousel -->
@@ -102,7 +98,7 @@
       <img class="img-circle" src="../img/emotion.jpg">
       <h2>Emotions</h2>
       <p>You can tell how a person is feeling, just by looking at their face! Lets see how good you are at it!</p>
-      <p><a class="btn btn-default" href="#">Lets Play »</a></p>
+      <p><a class="btn btn-default" onclick="location.href = 'LevelPickEmotions.html'">Lets Play »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="../img/alphabet.jpg">
@@ -137,5 +133,9 @@
   </footer>
 
 </div><!-- /.container -->
+
+
+
+
 </body>
 </html>

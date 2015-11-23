@@ -15,6 +15,10 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  
+}
+.newBody{
+padding-top: 50px;
 }
 
 
@@ -31,7 +35,7 @@ width:140px;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 5;
   color: #018DEF;
 }
 
@@ -132,7 +136,7 @@ width:140px;
 
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
   }
   /* The navbar becomes detached from the top, so we round the corners */
