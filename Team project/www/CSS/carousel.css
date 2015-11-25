@@ -31,11 +31,15 @@ width:140px;
 }
 .second-slide {
 height:10px;
-width:1500px;}
+width:1500px;
+}
+
 .third-slide {
 height:10px;
 width:1500px;
 }
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -159,6 +163,9 @@ width:1500px;
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
+  }
+.navbar-nav > li.navbar-right {
+    float: right !important;
   }
 
 }
