@@ -8,7 +8,7 @@ function file(type){
 		var folder = "emotions";
 	}
 	else if(type==3){
-		var pics = [];
+		var pics = ["stop","greenlight","redlight","amberlight","roadclosed","roadworks","busstop","noentry","leftturn","rightturn","gostraight","nouturn","yield","gosign","greenman","redman","dualcarriageway","narrowroad","noovertaking","buslane","childrenahead","parking","noparking","dangerousbend"];
 		var folder = "roadsigns";
 	}
 	else{
