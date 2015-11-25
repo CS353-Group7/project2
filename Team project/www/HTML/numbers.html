@@ -1,0 +1,46 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EduSign</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/carousel.css" rel="stylesheet">
+		<script src="../js/filegen.js"></script>
+	</head>
+	<body class = "newBody"  onload="file(4)">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="welcome.html">EduSign</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">My Account</a></li>
+					<li><a href="#contact">Parent's Account</a></li>
+					<li><a href="#contact">Sign Out</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="text-center">
+				<p id="count">0</p>
+				<p>Lets Go! Which picture looks <b id="find">Default</b></p>
+				<div><input type="image" id= "one" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')" /></div>
+				<div><input type="image" id="two" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')" /></div>
+				<div><input type="image" id="three" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')"  /></div>
+			</div>
+		</div>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+	</body>
+</html>

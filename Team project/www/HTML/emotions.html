@@ -9,7 +9,7 @@
 		<link href="../css/carousel.css" rel="stylesheet">
 		<script src="../js/filegen.js"></script>
 	</head>
-	<body class = "newBody"  onload="file()">
+	<body class = "newBody"  onload="file(2)">
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -33,10 +33,11 @@
 
 		<div class="container">
 			<div class="text-center">
+				<p id="count">0</p>
 				<p>Lets Go! Which picture looks <b id="find">Default</b></p>
-				<div><input type="image" id= "one" src="../img/a.jpg" value = "Level1Q1" onclick="location.href='emotionslevel1(2).html'" /></div>
-				<div><input type="image" id="two" src="../img/emotions/sad.png" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')" /></div>
-				<div><input type="image" id="three" src="../img/emotions/love.png" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')"  /></div>
+				<div><input type="image" id= "one" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')" /></div>
+				<div><input type="image" id="two" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')" /></div>
+				<div><input type="image" id="three" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')"  /></div>
 			</div>
 		</div>
 		<script src="../js/jquery.js"></script>
