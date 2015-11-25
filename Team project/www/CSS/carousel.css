@@ -21,10 +21,20 @@ body {
 padding-top: 50px;
 }
 
+.slider {
+color: black;
+}
 
 .img-circle{
 height:140px;
 width:140px;
+}
+.second-slide {
+height:10px;
+width:1500px;}
+.third-slide {
+height:10px;
+width:1500px;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
