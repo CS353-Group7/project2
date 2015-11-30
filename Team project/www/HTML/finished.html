@@ -1,27 +1,42 @@
 <!Doctype HTML>
 <html>
 	<head>
-	<meta charset="utf-8"/>
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="../css/index.css" />
-        <title>EduSign</title>
-        </head>
-       <body>
-       <h1>Emotions!</h1>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EduSign</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/carousel.css" rel="stylesheet">
+	</head>
+       <body class = "newBody">
+       <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="welcome.html">EduSign</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="welcome.html">Home</a></li>
+        <li><a href="#about">My Account</a></li>
+        <li><a href="#contact">Parent's Account</a></li>
+        <li><a href="#contact">Sign Out</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+       <h1 class="text">You finished the level!</h1>
        
        <div>
-       <p>Well Done! You Finished Level 1!</p>
-       <table>
-       <tr>
-				<td><button type="button" value = "Level1" onclick="location.href = 'emotionsLevel2.html'">Continue to Level 2</button></td>
-			</tr>
-			<tr>
-				<td><button type="button" value = "Level2" onclick="location.href='menu.html'">Go back to menu</button></td>
-			</tr>
-		</table>
+       <p class="text">Well Done! You Finished Level 1!</p>
+       			<a class="btn btn-large btn-primary" href="emotions.html">Continue to Level 2</a>
+				<a class="btn btn-large btn-primary" href="welcome.html">Go back to menu</a>
+			
+		
        </div>
        </body>
        </html>
