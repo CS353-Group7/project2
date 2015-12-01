@@ -14,27 +14,34 @@ include_once 'includes/functions.php';
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script>
     </head>
-    <body class = "newBody">
-	<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">EduSign</a>
-				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="HTML/welcome.html">Home</a></li>
-						<li><a href="#about">About Us</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li class="active"><a href ="register.php">Sign Up</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div>
-		</div>
+	<body>
+	<div class="navbar-wrapper">
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-static-top">
+      
+        <div class="navbar-header">
+	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </a>
+        <a class="navbar-brand" href="welcome.html">EduSign</a>
+        </div>
+         <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="welcome.html">Home</a></li>
+            <li><a href=aboutUs.html>About Us</a></li>
+
+            
+            
+        </ul>
+     
+          
+        </div>
+
+    </div>
+  </div><!-- /container -->
+</div>
         <!-- Registration form to be output if the POST variables are not
         set or if the registration script caused an error. -->
         <h2>Register with us</h2>
@@ -43,7 +50,8 @@ include_once 'includes/functions.php';
             echo $error_msg;
         }
         ?>
-		
+		<div class = "container">
+		<div class="text-center">
         <ul>
             <li>Usernames may contain only digits, upper and lowercase letters and underscores</li>
             <li>Emails must have a valid email format</li>
@@ -81,5 +89,8 @@ include_once 'includes/functions.php';
         </form>
         <p>Return to the <a href="index.php">login page</a>.</p>
 		</div>
+		</div>
+		</div>
+		
     </body>
 </html>
