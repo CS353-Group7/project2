@@ -6,6 +6,7 @@ function file(type){
 	else if(type==2){
 		var pics = ["happy","sad","angry","surprised","love","laughing","pensive","crying","sleepy","frustrated","scared","embarrassed","excited","smug","innocent","bored"];
 		var folder = "emotions";
+		
 	}
 	else if(type==3){
 		var pics = ["stop","greenlight","redlight","amberlight","roadclosed","roadworks","busstop","noentry","leftturn","rightturn","gostraight","nouturn","yield","gosign","greenman","redman","dualcarriageway","narrowroad","noovertaking","buslane","childrenahead","parking","noparking","dangerousbend"];
@@ -56,9 +57,73 @@ function file(type){
 	
 }
 
-function choose(){
-	
+function choose(type){
 	if(type==1){
-		document.get
+		window.location.href = "../HTML/levelchoose.html#1";
 	}
+	else if(type==2){
+		window.location.href = "../HTML/levelchoose.html#2";
+	}
+	else if(type==3){
+		window.location.href = "../HTML/levelchoose.html#3";
+	}
+	else{
+		window.location.href = "../HTML/levelchoose.html#4";
+	}
+}
+
+function load(){
+	var type = parseInt((document.location.href).slice(-1));
+	if(type==1){
+		document.getElementById("heading").innerHTML = "Alphabet";
+		document.getElementsByClassName("lead")[0].innerHTML = "Here we will play different levels that will test your knowledge on the alphabet.<br> First lets pick a level!";
+	}
+	else if(type==2){
+		document.getElementById("heading").innerHTML = "Emotions";
+		document.getElementsByClassName("lead")[0].innerHTML = "Here we will play different levels that will test your knowledge on emotions.<br> First lets pick a level!";
+	}
+	else if(type==3){
+		document.getElementById("heading").innerHTML = "Road Signs";
+		document.getElementsByClassName("lead")[0].innerHTML = "Here we will play different levels that will test your knowledge on road signs.<br> First lets pick a level!";
+	}
+	else{
+		document.getElementById("heading").innerHTML = "Numbers";
+		document.getElementsByClassName("lead")[0].innerHTML = "Here we will play different levels that will test your knowledge on the numbers.<br> First lets pick a level!";
+	}
+	var list = document.getElementsByClassName("btn btn-large btn-primary");
+	for(i = 0;i<list.length;i++){
+		list[i].onclick = function (){step(type);return false;};
+	}
+}
+
+function step(type){
+	if(type==1){
+		window.location.href = "../HTML/level.html#1";
+	}
+	else if(type==2){
+		window.location.href = "../HTML/level.html#2";
+	}
+	else if(type==3){
+		window.location.href = "../HTML/level.html#3";
+	}
+	else{
+		window.location.href = "../HTML/level.html#4";
+	}
+}
+
+function bit(){
+	var type = parseInt((document.location.href).slice(-1));
+	if(type==1){
+		document.getElementById("top").innerHTML = "Lets Go! Which picture begins with the letter <b id='find'>Default</b>";
+	}
+	if(type==2){
+		document.getElementById("top").innerHTML = "Lets Go! Which picture makes the person look <b id='find'>Default</b>";
+	}
+	if(type==3){
+		document.getElementById("top").innerHTML = "Lets Go! Which picture looks like <b id='find'>Default</b>";
+	}
+	else{
+		document.getElementById("top").innerHTML = "Lets Go! Which picture is the number <b id='find'>Default</b>";
+	}
+	file(type);
 }

@@ -9,7 +9,7 @@
 		<link href="../css/carousel.css" rel="stylesheet">
 	</head>
 	
-	<body class="newBody">
+	<body onload="bit();" class="newBody">
 	<div class="navbar-wrapper">
   <div class="container">
     <div class="navbar navbar-inverse navbar-static-top">
@@ -25,7 +25,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="welcome.html">Home</a></li>
-            <li><a href="myAccount.html"">My Account</a></li>
+            <li><a href="myAccount.html">My Account</a></li>
             <li><a href="#Paccount">Parent's Account</a></li>
             <li><a href=aboutUs.html>About Us</a></li>
             <li><a href="#signout">Sign Out</a></li>
@@ -42,14 +42,18 @@
 
 		<div class="container">
 			<div class="text-center">
-				<p>Lets Go! Which picture looks <b id="find">Default</b></p>
-				<div><input type="image" id= "one" src="../img//emotions/happy.png" value = "Level1Q1" onclick="location.href='emotionslevel1(2).html'" /></div>
-				<div><input type="image" id="two" src="../img/emotions/sad.png" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')" /></div>
-				<div><input type="image" id="three" src="../img/emotions/love.png" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')"  /></div>
+				<br>
+				<br>
+				<p id="count">0</p>
+				<p id = "top">Lets Go! Which picture begins with the letter <b id="find">Default</b></p>
+				<div><input class="image-size" type="image" id= "one" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')" /></div>
+				<div><input class="image-size" type="image" id="two" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')" /></div>
+				<div><input class="image-size" type="image" id="three" src="default" alt ="default" value = "Level1Q1" onclick="alert('Whoops,you picked the wrong one. Try again!')"  /></div>
+				
 			</div>
 		</div>
 		<script src="../js/jquery.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
-		<script src="../js/filegen.js"</sript>
+		<script src="../js/filegen.js"></script>
 	</body>
 </html>
