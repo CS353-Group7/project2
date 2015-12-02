@@ -139,9 +139,8 @@ position: center;
 }
 
 .image-size{
-height:140px;
-width:auto;
-display:inline;
+	height:auto;
+	width:140px;
 }
 
 

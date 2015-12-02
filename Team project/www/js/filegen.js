@@ -57,7 +57,8 @@ function file(type){
 }
 
 function choose(){
+	
 	if(type==1){
-		
+		document.get
 	}
 }
