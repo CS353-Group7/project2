@@ -13,7 +13,7 @@ function file(type){
 		var folder = "roadsigns";
 	}
 	else{
-		var pics =["0","1","2","3","4","5","6","7","8","9"];
+		var pics =["zero","one","two","three","four","five","six","seven","eight","nine"];
 		var folder = "numbers";
 	}
 	var counter = parseInt(document.getElementById("count").innerHTML);
