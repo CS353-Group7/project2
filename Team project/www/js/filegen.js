@@ -52,24 +52,13 @@ function file(type){
 		}
 	}
 	else{
-		window.location = "finished.html";
+		window.location = "finished.html#"+type;
 	}
 	
 }
 
 function choose(type){
-	if(type==1){
-		window.location.href = "../HTML/levelchoose.html#1";
-	}
-	else if(type==2){
-		window.location.href = "../HTML/levelchoose.html#2";
-	}
-	else if(type==3){
-		window.location.href = "../HTML/levelchoose.html#3";
-	}
-	else{
-		window.location.href = "../HTML/levelchoose.html#4";
-	}
+	window.location.href = "../HTML/levelchoose.html#" + type;
 }
 
 function load(){
@@ -97,18 +86,12 @@ function load(){
 }
 
 function step(type){
-	if(type==1){
-		window.location.href = "../HTML/level.html#1";
-	}
-	else if(type==2){
-		window.location.href = "../HTML/level.html#2";
-	}
-	else if(type==3){
-		window.location.href = "../HTML/level.html#3";
-	}
-	else{
-		window.location.href = "../HTML/level.html#4";
-	}
+	window.location.href = "../HTML/level.html#" + type;
+}
+
+function next(){
+	var type = parseInt((document.location.href).slice(-1));
+	window.location.href = "../HTML/level.html#" + type;
 }
 
 function bit(){
