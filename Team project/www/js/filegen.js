@@ -100,10 +100,10 @@ function bit(){
 		document.getElementById("top").innerHTML = "Lets Go! Which picture begins with the letter <b id='find'>Default</b>";
 	}
 	else if(type==2){
-		document.getElementById("top").innerHTML = "Lets Go! Which picture makes the person look <b id='find'>Default</b>";
+		document.getElementById("top").innerHTML = "Lets Go! Which person looks <b id='find'>Default</b>";
 	}
 	else if(type==3){
-		document.getElementById("top").innerHTML = "Lets Go! Which picture looks like <b id='find'>Default</b>";
+		document.getElementById("top").innerHTML = "Lets Go! Which road sign looks like <b id='find'>Default</b>";
 	}
 	else{
 		document.getElementById("top").innerHTML = "Lets Go! Which picture is the number <b id='find'>Default</b>";
