@@ -57,10 +57,6 @@ function file(type){
 	
 }
 
-function choose(type){
-	window.location.href = "../HTML/levelchoose.html#" + type;
-}
-
 function load(){
 	var type = parseInt((document.location.href).slice(-1));
 	if(type==1){
@@ -81,12 +77,8 @@ function load(){
 	}
 	var list = document.getElementsByClassName("btn btn-large btn-primary");
 	for(i = 0;i<list.length;i++){
-		list[i].onclick = function (){step(type);return false;};
+		list[i].href = "../HTML/level.html#" + type;
 	}
-}
-
-function step(type){
-	window.location.href = "../HTML/level.html#" + type;
 }
 
 function next(){
