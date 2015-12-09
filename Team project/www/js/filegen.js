@@ -1,6 +1,9 @@
 function file(type){
+	var levelnum = parseInt((document.location.href).slice(-2)[0]);
 	if(type==1){
-		var pics = ["Apple","Ball","Cat","Dog","Elephant","Fish","Girl","House","IceCream","Jumper","Kite","Lion","Monkey","Nose","Orange","Pencil","Queen","Ring","Snake","Tree","Umbrella","Volcano","Window","Xray","Yoyo","Zebra"];
+		if(levelnum==0) var pics = ["Apple","Ball","Cat","Dog","Elephant","Fish","Girl","House"];
+		else if(levelnum==1) var pics = ["IceCream","Jumper","Kite","Lion","Monkey","Nose","Orange","Pencil"];
+		else var pics = ["Queen","Ring","Snake","Tree","Umbrella","Volcano","Window","Xray","Yoyo","Zebra"];
 		var folder = "alphabet";
 	}
 	else if(type==2){
@@ -17,6 +20,7 @@ function file(type){
 		var folder = "numbers";
 	}
 	var counter = parseInt(document.getElementById("count").innerHTML);
+	
 	if (counter < 8){
 		counter++;
 		document.getElementById("count").innerHTML=counter;
@@ -52,7 +56,9 @@ function file(type){
 		}
 	}
 	else{
-		window.location = "finished.html#"+type;
+		levelnum++;
+		if(levelnum>2) window.location = "welcome.html";
+		else window.location = "finished.html#"+levelnum+type;
 	}
 	
 }
@@ -77,13 +83,14 @@ function load(){
 	}
 	var list = document.getElementsByClassName("btn btn-large btn-primary");
 	for(i = 0;i<list.length;i++){
-		list[i].href = "level.html#" + type;
+		list[i].href = "level.html#" + i + type;
 	}
 }
 
 function next(){
+	var levelnum = parseInt((document.location.href).slice(-2)[0]);
 	var type = parseInt((document.location.href).slice(-1));
-	window.location.href = "level.html#" + type;
+	window.location.href = "level.html#" + levelnum + type;
 }
 
 function bit(){
@@ -101,4 +108,11 @@ function bit(){
 		document.getElementById("top").innerHTML = "Lets Go! Which picture is the number <b id='find'>Default</b>";
 	}
 	file(type);
+}
+
+function nextlevel(){
+	var levelnum = parseInt((document.location.href).slice(-2)[0]);
+	document.getElementById("which").innerHTML="Well Done! You Finished Level " + levelnum + "!";
+	levelnum++;
+	document.getElementById("levelnum").innerHTML="Continue to Level " + levelnum;
 }
