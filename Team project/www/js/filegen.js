@@ -77,13 +77,13 @@ function load(){
 	}
 	var list = document.getElementsByClassName("btn btn-large btn-primary");
 	for(i = 0;i<list.length;i++){
-		list[i].href = "../HTML/level.html#" + type;
+		list[i].href = "level.html#" + type;
 	}
 }
 
 function next(){
 	var type = parseInt((document.location.href).slice(-1));
-	window.location.href = "../HTML/level.html#" + type;
+	window.location.href = "level.html#" + type;
 }
 
 function bit(){
