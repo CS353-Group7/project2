@@ -42,6 +42,8 @@ include_once 'includes/functions.php';
     </div>
   </div><!-- /container -->
 </div>
+<div class="container">
+			<div class="text-center">
         <!-- Registration form to be output if the POST variables are not
         set or if the registration script caused an error. -->
         <h2>Register with us</h2>
@@ -65,18 +67,22 @@ include_once 'includes/functions.php';
             </li>
             <li>Your password and confirmation must match exactly</li>
         </ul>
-		<div class="text-center">
+		
         <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 
                 method="post" 
                 name="registration_form">
-            Username: <input type='text' 
+            Username:<br>
+             <input type='text' 
                 name='username' 
                 id='username' /><br>
-            Email: <input type="text" name="email" id="email" /><br>
-            Password: <input type="password"
+            Email: <br>
+            <input type="text" name="email" id="email" /><br>
+            Password: <br>
+            <input type="password"
                              name="password" 
                              id="password"/><br>
-            Confirm password: <input type="password" 
+            Confirm password:<br>
+             <input type="password" 
                                      name="confirmpwd" 
                                      id="confirmpwd" /><br>
             <input type="button" 
@@ -88,6 +94,7 @@ include_once 'includes/functions.php';
                                    this.form.confirmpwd);" /> 
         </form>
         <p>Return to the <a href="index.php">login page</a>.</p>
+		</div>
 		</div>
 		</div>
 		</div>
