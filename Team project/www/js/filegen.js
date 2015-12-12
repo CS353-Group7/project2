@@ -1,3 +1,4 @@
+var temppics = ["Hello"];
 function file(type){
 	var levelnum = parseInt((document.location.href).slice(-2)[0]);
 	if(type==1){
@@ -23,14 +24,19 @@ function file(type){
 		var folder = "numbers";
 	}
 	var counter = parseInt(document.getElementById("count").innerHTML);
+	if(counter==0){
+		temppics=pics.slice();
+	}
 
 	if (counter < 8){
 		counter++;
 		document.getElementById("count").innerHTML=counter;
 
-		var value = Math.ceil(Math.random()*pics.length)-1;
-		var str1 = pics[value];
+		var value = Math.ceil(Math.random()*temppics.length)-1;
+		var str1 = temppics[value];
 		var find = document.getElementById("find");
+		temppics.splice(value, 1);
+		value = pics.indexOf(str1);
 		if(type==1){
 			find.innerHTML = str1.charAt(0);
 		}
@@ -42,7 +48,7 @@ function file(type){
 		var value1 = Math.ceil(Math.random()*times.length)-1;
 		(document.getElementById(times[value1])).src = "../img/"+folder+"/" + str1 + ".png";
 		(document.getElementById(times[value1])).onclick = function (){file(type);return false;};
-		if (value > -1) {
+		if (value1 > -1) {
 			times.splice(value1, 1);
 		}
 
@@ -50,13 +56,13 @@ function file(type){
 			if (value > -1) {
 				pics.splice(value, 1);
 			}
-
 			value = Math.ceil(Math.random()*pics.length)-1;
 			str1 = pics[value];
 
 			(document.getElementById(times[i])).src = "../img/"+folder+"/" + str1 + ".png";
 			(document.getElementById(times[i])).onclick =  function (){alert('Whoops,you picked the wrong one. Try again!');return false;};
 		}
+		console.log(pics);
 	}
 	else{
 		levelnum++;
